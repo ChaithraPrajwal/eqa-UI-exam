@@ -26,4 +26,13 @@ export class GridPage {
   public static get columnHeader() {
     return $$('[aria-rowindex="1"] > [role="columnheader"]');
   }
+  public static get colsideBar(){
+    return $('[class="ag-virtual-list-container ag-column-select-virtual-list-container"]')
+  }
+  public static get headerContainer(){
+    return $('[class="ag-header-container"]')
+  }
+  public static rowContainer(){return $('[class="ag-center-cols-viewport"]')}
+  public static NamesInput(){return $('//input[@aria-label="Name Filter Input"]')}
+  public static result(){return $('//div[@class="ag-status-name-value ag-status-panel ag-status-panel-total-and-filtered-row-count""]')}
 }
